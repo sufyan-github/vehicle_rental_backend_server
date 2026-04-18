@@ -1,0 +1,26 @@
+🔹 Register
+
+POST → http://localhost:8080/register
+
+{
+  "name": "Sufyan",
+  "email": "test@example.com",
+  "password": "123456",
+  "role": "user"
+}
+
+
+🔹 Login
+
+POST → http://localhost:8080/login
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+
+{
+  "email": "admin@test.com",
+  "password": "123456"
+}
