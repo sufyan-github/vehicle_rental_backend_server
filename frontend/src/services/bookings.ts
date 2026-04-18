@@ -10,7 +10,7 @@ export interface Booking {
 }
 
 export const bookingService = {
-  create: async (data: { vehicle_id: number; start_date: string; end_date: string }) => {
+  create: async (data: { VehicleID: number; StartDate: string; EndDate: string }) => {
     const response = await api.post('/book', data);
     return response.data;
   },

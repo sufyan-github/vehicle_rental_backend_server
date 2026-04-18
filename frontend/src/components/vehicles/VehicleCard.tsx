@@ -34,9 +34,9 @@ export default function VehicleCard({ vehicle }: Props) {
       const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
       
       await bookingService.create({
-        vehicle_id: vehicle.ID,
-        start_date: today,
-        end_date: tomorrow,
+        VehicleID: vehicle.ID,
+        StartDate: today,
+        EndDate: tomorrow,
       });
       toast.success(`Successfully booked ${vehicle.Name}!`);
       router.push('/my-bookings');

@@ -79,10 +79,10 @@ export default function AdminPage() {
     e.preventDefault();
     try {
       const payload = {
-        name,
-        brand,
-        price_per_day: parseFloat(price),
-        available,
+        Name: name,
+        Brand: brand,
+        PricePerDay: parseFloat(price),
+        Available: available,
       };
 
       if (currentId) {
